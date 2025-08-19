@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuro</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <h1>Xuro</h1>
+        </div>
+        <div class="navlist">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <button>Login</button>
+            </ul>
+        </div>
+    </nav>
+    <main>
+
+        <section id="login">
+            <form id="loginForm">
+                <h2>Login</h2>
+                
+                <div class="email text">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <img src="./images/email.png" alt="email">
+                </div>
+
+                <div class="password text">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <img src="./images/hidden.png" alt="password" class="changeView">
+                </div>
+
+                <div class="additional">
+                    <div class="remember-radio">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label>Remember Me</label>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+
+                <div class="submitSection">
+                    <button type="submit">Login</button>
+                </div>
+
+                <p class="register-btn">Don't have an account? <a id="show-register">Register</a></p>
+
+            </form>
+        </section>
+
+
+        <section id="register" style="display: none;">
+            <form id="registerForm">
+                <h2>Register</h2>
+                
+                <div class="email text">
+                    <input type="email" name="email" id="email1" placeholder="Email" required>
+                    <img src="./images/email.png" alt="email">
+                </div>
+
+                <div class="password text">
+                    <input type="password" name="password" id="password1" placeholder="Enter Password" required>
+                    <img src="./images/hidden.png" alt="password" class="changeView1">
+                </div>
+                
+                <div class="password text">
+                    <input type="password" name="password" id="password2" placeholder="Confirm Password" required>
+                    <img src="./images/hidden.png" alt="password" class="changeView1">
+                </div>
+
+                <div class="additional">
+                    <div class="remember-radio">
+                        <input type="checkbox" name="checkbox" id="checkbox1">
+                        <label>Remember Me</label>
+                    </div>
+                    <div class="pass-check">
+                        <p class="passError" style="display: none; color: white; text-shadow: 3px 0px 5px #ffb4a6;">Password does not match</p>
+                    </div>
+                </div>
+
+                <div class="submitSection">
+                    <button type="submit">Register</button>
+                </div>
+
+                <p class="register-btn">Already have an account? <a id="show-login">Login</a></p>
+
+            </form>
+        </section>
+    </main>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

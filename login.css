@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    padding: 1.5rem;
+    background-image: url(./images/bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    height: 100vh;
+    color: white;
+}
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-weight: 900;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+ul{
+    font-size: 1.2rem;
+    display: flex;
+    font-weight: 500;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+ul button{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 7px 20px;
+    background-color: #ffffff00;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+section{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid rgb(230, 230, 230);
+    box-shadow: 1px 1px 15px 2px #c1c1c1;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    margin-top: 2rem;
+}
+img{
+    width: 25px;
+}
+.password img{
+    cursor: pointer;
+}
+.password img:hover{
+    width: 27px;
+}
+.text{
+    padding: 5px;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid white;
+}
+input{
+    color: white;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 3px;
+    border: none;
+    outline: none;
+    background-color: #ffffff00;
+}
+::placeholder{
+    color: rgb(225, 225, 225);
+}
+.remember-radio{
+    display: flex;
+    align-items: center;
+}
+.additional{
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+a{
+    color: rgb(237, 237, 237);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+  font-size: 1.05em;
+  cursor: pointer;
+}
+.submitSection{
+    margin-top: 2rem;
+    width: 100%;
+}
+.submitSection button{
+    font-weight: 900;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #14266e;
+    cursor: pointer;
+}
+.register-btn{
+    margin-top: 1rem;
+    a{
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .navlist{
+        display: none;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    section {
+        padding: 1.5rem;
+        width: 95%;
+    }
+    ul {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+}
